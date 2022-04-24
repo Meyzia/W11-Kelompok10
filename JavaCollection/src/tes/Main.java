@@ -25,9 +25,9 @@ public class Main {
      */
     public static void main(String[] args) throws FileNotFoundException {
         // TODO code application logic here
-        BufferedReader br = new BufferedReader(new FileReader("dataEkspedisi.json"));
-        Type listType = new TypeToken<ArrayList<Ekspedisi>>(){}.getType();
-        List<Ekspedisi> data = new Gson().fromJson(br, listType);
+        BufferedReader br = new BufferedReader(new FileReader("dataProduk.json"));
+        Type listType = new TypeToken<ArrayList<Produk>>(){}.getType();
+        List<Produk> data = new Gson().fromJson(br, listType);
         data.forEach(System.out::println);
     }
     
